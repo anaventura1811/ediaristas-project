@@ -1,9 +1,15 @@
 import React from 'react'
 
-function PageTitle({ title }) {
+interface PageTitleProps {
+  title: string;
+  subtitle: string;
+}
+
+function PageTitle({ title, subtitle } : PageTitleProps) : JSX.Element {
   return (
     <div>
-      
+      { title }
+      { subtitle }
     </div>
   )
 }
