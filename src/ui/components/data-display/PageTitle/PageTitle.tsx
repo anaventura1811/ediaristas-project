@@ -1,16 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { PageTitleContainer, PageTitleStyled, PageSubtitleStyled } from './PageTitle.style';
 
 interface PageTitleProps {
   title: string;
-  subtitle: string;
+  subtitle?: string | JSX.Element;
 }
 
 function PageTitle({ title, subtitle } : PageTitleProps) : JSX.Element {
   return (
-    <div>
-      { title }
-      { subtitle }
-    </div>
+    <PageTitleContainer>
+      <PageTitleStyled>{ title }</PageTitleStyled>
+      <PageSubtitleStyled>{ subtitle }</PageSubtitleStyled> 
+    </PageTitleContainer>
   )
 }
 
