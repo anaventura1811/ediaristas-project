@@ -3,6 +3,8 @@ import { ThemeProvider } from '@material-ui/core';
 import theme from 'ui/themes/theme';
 import Head from 'next/head';
 import Header from 'ui/components/Header/Header';
+import Footer from 'ui/components/Footer/Footer';
+import { AppContainer } from 'ui/styles/_app.style';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,8 +16,12 @@ function MyApp({ Component, pageProps }) {
         <title>e-diaristas</title>
       </Head>
       <ThemeProvider theme={ theme }>
-        <Header />
-        <Component {...pageProps} />
+        <AppContainer>
+          <Header />
+          <Component {...pageProps} />
+          <Footer />
+        </AppContainer>
+
       </ThemeProvider>
     </>
   )

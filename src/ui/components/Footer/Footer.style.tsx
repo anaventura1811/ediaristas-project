@@ -6,11 +6,13 @@ export const FooterStyled = styled('footer')`
   color: ${({theme}) =>
     theme.palette.getContrastText(theme.palette.primary.main)};
   padding: ${({theme}) => theme.spacing(4)} 0;
+  margin-top: auto;
 `;
 
 export const FooterContainer = styled(Container)`
   display: flex;
   justify-content: space-between;
+  align-items: center;
   gap: ${({theme}) => theme.spacing(2)};
   flex-wrap: wrap;
   ${({theme}) => theme.breakpoints.down('md') }{

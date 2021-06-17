@@ -6,7 +6,7 @@ function SafeEnvironment() {
   return (
     <SafeEnvironmentContainer>
       <Container>
-        Ambiente seguro <i className={'twf-lock'}/>
+        Ambiente Seguro <i className={'twf-lock'}/>
       </Container>
     </SafeEnvironmentContainer>
   )
