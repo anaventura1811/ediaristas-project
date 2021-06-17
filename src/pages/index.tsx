@@ -91,9 +91,11 @@ export default function Home() {
               />
             </ProfessionalsContainer>
             <Container sx={{ textAlign: 'center' }}>
-              <Typography>
-                ... e mais X profissionais atendem no seu endereço.
-              </Typography>
+              { diaristasRestantes > 0 && (
+                <Typography>
+                  ... e mais X profissionais atendem no seu endereço.
+                </Typography>
+              )}
               <Button
                 variant={'contained'}
                 color={'secondary'}
